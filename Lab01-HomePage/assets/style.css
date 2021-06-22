@@ -18,7 +18,12 @@ section{
     padding: 3px;
     background: #FFFFFF;
 }
+.validate{
+    float: right;
+}
 .footer{
     padding: 30px;
-    background: #c1c1c1;
+    background: #3698ae;
+    color: white;
+
 }
