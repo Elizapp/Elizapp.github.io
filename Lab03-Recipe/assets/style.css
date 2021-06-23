@@ -19,21 +19,26 @@ body ul {
     list-style-image: url(../images/pie_icon.gif);
 }
 article{
-    border-bottom: 1px solid #404040;
     margin-bottom: 0px;
     padding: 16px;
 }
-.header_panel {
+section .main_content:not(:last-of-type){
+    border-bottom: 1px solid #404040;
+}
+
+h1,h2 {
     background: #F0F0F0;
     color: #A4A400;
     font-family: Lucida Sans Unicode, Helvetica, Aria, sans-serif;
-    font-size: 22pt;
     font-weight: 700;
     text-decoration: underline;
-    padding: 6px;
     padding-left: 0;
+    margin: 0px;
+    font-size: 23px;
 }
-
+h1 {
+    font-size: 24pt;
+}
 .header_panel.top_header {
     text-align: center;
 }
@@ -44,8 +49,6 @@ article{
     display: flex;
     flex-direction: column;
 }
-
-
 .article_content  .abbreviation {
     text-decoration: underline;
 }
@@ -68,7 +71,7 @@ article{
     font-weight: 700;
 }
 
-.preformatted {
+.right-format {
     font-family: monospace;
     white-space: pre;
 }
