@@ -92,7 +92,7 @@ section{
     float: left;
 }
 .reviewer-info{
-    display: flex;
+    display: block;
 }
 .aside-area dl{
     margin-bottom: 10pt;
