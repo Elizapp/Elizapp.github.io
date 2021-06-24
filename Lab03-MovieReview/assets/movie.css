@@ -109,3 +109,6 @@ section{
     float: left;
     width: 100%;
 }
+.validators{
+    float: right;
+}
