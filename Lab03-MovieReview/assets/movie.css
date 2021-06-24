@@ -64,3 +64,17 @@ section{
 .overall-area-percent img{
     border-top-left-radius: 20px;
 }
+.user_review{
+    width: 47%;
+    float: left;
+    margin-left: 2%;
+}
+.user_comment{
+    border: #b6b6b6 2px solid;
+    background: #E8DC9B;
+    border-radius: 10px;
+    padding: 8px;
+}
+.user_review img{
+    margin-right:  5px;
+}
