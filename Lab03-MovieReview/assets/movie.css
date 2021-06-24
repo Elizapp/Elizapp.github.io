@@ -80,6 +80,9 @@ section{
     font-weight: bold;
     overflow: hidden;
 }
+.user_comment p span{
+    font-style: italic;
+}
 .user_review img{
     margin-right:  5px;
     float: left;
