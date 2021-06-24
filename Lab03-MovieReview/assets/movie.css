@@ -32,7 +32,6 @@ section{
 .aside-area{
     float: right;
     width: 250px;
-    border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     background: #A2B964;
     height: 1191px;
@@ -64,9 +63,13 @@ section{
 .overall-area-percent img{
     border-top-left-radius: 20px;
 }
+.reviewer-area{
+    display: flex;
+    column-count: 2;
+    flex-wrap: wrap;
+}
 .user_review{
     width: 47%;
-    float: left;
     margin-left: 2%;
 }
 .user_comment{
@@ -74,7 +77,25 @@ section{
     background: #E8DC9B;
     border-radius: 10px;
     padding: 8px;
+    font-weight: bold;
+    overflow: hidden;
 }
 .user_review img{
     margin-right:  5px;
+    float: left;
+}
+.aside-area dl{
+    margin-bottom: 10pt;
+}
+.aside-area dl dt{
+    font-weight: 700;
+    margin-top: 5px;
+}
+.pagination{
+    background: #A2B964;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    float: left;
+    width: 100%;
 }
