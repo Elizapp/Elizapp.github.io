@@ -45,10 +45,22 @@ section{
 }
 .content-article{
     float: right;
-    width: 530px;
+    width: 550px;
 }
 .content-area{
     box-shadow: 0 0 0 4px grey;
     border-radius: 20px;
     width: 800px;
+}
+.overall-area-percent{
+    background-image: url("../images/rbg.png");
+    background-repeat: repeat;
+    border-top-left-radius: 20px;
+    color: red;
+    font-weight: 700;
+    font-size: 48pt;
+    display: flex;
+}
+.overall-area-percent img{
+    border-top-left-radius: 20px;
 }
