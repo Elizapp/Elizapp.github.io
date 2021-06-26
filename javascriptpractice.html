@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practice JS Lab 05</title>
+    <link href="Lab04-ResponsiveLayout/assets/bootstrap-4.1.3-dist/css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+    <link href="Lab04-ResponsiveLayout/assets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+    <div>
+        <h3>Click this button to test all functions and see the results in console</h3>
+        <p>or you can test some of the fuctions using the buttons for each one.</p>
+        <button class="btn btn-success" onclick="test()">Test Fucntions</button>
+    </div>
+    <h3 class="mt-4">Requirements</h3>
+    <ol>
+        <li>Define a function max() that takes two numbers as arguments and returns the largest of them. Use the
+            if-then-else construct available in Javascript<br>
+            <button id="twoNumberMax" onclick="testMax()">Compare </button>
+            <input type="text" id="number1" value="0"> and
+            <input type="text" id="number2" value="0">
+            = <span id="twoNumberMaxResult">0</span>
+        </li>
+        <li>Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them<br>
+            <button id="twoNumberMaxOfThree" onclick="testMaxOfThree()">Compare </button>
+            <input type="text" id="num1" value="0"> ,
+            <input type="text" id="num2" value="0"> and
+            <input type="text" id="num3" value="0">
+            = <span id="twoNumberMaxOfThreeResult">0</span>
+        </li>
+        <li>Write a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is
+            a vowel, false otherwise<br>
+            <button onclick="testIsVowel()">Verify </button>
+            <input type="text" id="vowel" value="a">
+            = <span id="isVowelResult">true</span>
+        </li>
+        <li>Define a function sum() and a function multiply() that sums and multiplies (respectively) all the
+            numbers in an input array of numbers. For example, sum([1,2,3,4]) should return 10, and
+            multiply([1,2,3,4]) should return 24. Note/Hint: Do these using Imperative programming approach (i.e.
+            for…loop or while…loop)<br>
+            <button onclick="testSumAndMulti()">Calculate </button>
+            <input type="text" id="arrayNums" value="1,2,3,8,12">
+            <br>Sum = <span id="sum"></span>
+            <br>Multiplication = <span id="multiplication"></span>
+        </li>
+        <li>Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar")
+            should return the string "ratset gaj".<br>
+            <button onclick="testReverse()">Reverse </button>
+            <input type="text" id="string" value="ratset gaj test">
+            = <span id="reverseResult"></span>
+        </li>
+        <li>Write a function findLongestWord() that takes an array of words and returns the length of the longest
+            one</li>
+        <li>Write a function filterLongWords() that takes an array of words and an integer i and returns a new array
+            containing only those words that were longer than i characters</li>
+        <li>Modify the jsfiddle on the map/filter/reduce slide as follows:<br>
+            a) multiply each element by 10;<br>
+            b) return array with all elements equal to 3;<br>
+            c) return the product of all elements;</li>
+        <li>​After you finish, make sure all your functions are in ONE JS file</li>
+    </ol>
+</div>
+</body>
+
+
+<script src="Lab05-JavascriptPractice/javascript.js"></script>
+</html>
