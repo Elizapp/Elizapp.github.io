@@ -99,24 +99,24 @@ function maxOfThree2(a, b, c) {
 
 function testAll() {
     console.log(
-    "Expected output of  " + myFunctionTest(' max(4,5)', 5, max(4, 5))
-   + "\nExpected output of  " + myFunctionTest(' maxOfThree(8,26, 27)', 27, maxOfThree(8,26, 27))
-   + "\nExpected output of  " + myFunctionTest(' isVowel("a")', true, isVowel('a'))
-   + "\nExpected output of  " + myFunctionTest(' sum([45,5,6,7])', 63, sum([45,5,6,7]))
-   + "\nExpected output of  " + myFunctionTest(' multiply([45,5,6,7])', 9450, multiply([45,5,6,7]))
-   + "\nExpected output of  " + myFunctionTest(' reverse("ratset gaj test")', "tset jag testar", reverse("ratset gaj test"))
-   + "\nExpected output of  " + myFunctionTest(' findLongestWord(["love", "thrut", "Tim", "Today is a good time"])', 20, findLongestWord(["love", "thrut", "Tim", "Today is a good time"]))
-   + "\nExpected output of  " + myFunctionTest(' filterLongWords(["John", "Pedro", "Lanjahet", "Bart", "Kamala"], 4)', ["Pedro", "Lanjahet", "Kamala"], filterLongWords(["John", "Pedro", "Lanjahet", "Bart", "Kamala"], 4))
-  // + "Expected output of  " + multipliesWithReduce(' multipliesWithReduce([45,5,6,7])', 5, multipliesWithReduce([45,5,6,7]))
+    "Expected output of " + myFunctionTest('max(4,5)', 5, max(4, 5))
+   + "\n\nExpected output of " + myFunctionTest('maxOfThree(8,26, 27)', 27, maxOfThree(8,26, 27))
+   + "\n\nExpected output of " + myFunctionTest('isVowel("a")', true, isVowel('a'))
+   + "\n\nExpected output of " + myFunctionTest('sum([45,5,6,7])', 63, sum([45,5,6,7]))
+   + "\n\nExpected output of " + myFunctionTest('multiply([45,5,6,7])', 9450, multiply([45,5,6,7]))
+   + "\n\nExpected output of " + myFunctionTest('reverse("ratset gaj test")', "tset jag testar", reverse("ratset gaj test"))
+   + "\n\nExpected output of " + myFunctionTest('findLongestWord(["love", "thrut", "Tim", "Today is a good time"])', 20, findLongestWord(["love", "thrut", "Tim", "Today is a good time"]))
+   + "\n\nExpected output of " + myFunctionTest('filterLongWords(["John", "Pedro", "Lanjahet", "Bart", "Kamala"], 4)', "Pedro,Lanjahet,Kamala", filterLongWords(["John", "Pedro", "Lanjahet", "Bart", "Kamala"], 4))
+  // + "Expected output of " + multipliesWithReduce(' multipliesWithReduce([45,5,6,7])', 5, multipliesWithReduce([45,5,6,7]))
     );
 }
 
-function myFunctionTest(no, expected, results) {
+function myFunctionTest(no, expected, found) {
 
-    if (expected === results) {
-        return no + " is "  + expected + " TEST SUCCEEDED";
+    if (expected === found) {
+        return no + " is "  + expected +" and found is " + found + " TEST SUCCEEDED";
     } else {
-        return no + " is "  + expected + " TEST FAILED.  Expected " + expected + " found " + results;
+        return no + " is "  + expected +" and found is " + found + " TEST FAILED.";
     }
 }
 console.log("Expected output of maxOfThree(5,4,44) is 44  " + myFunctionTest("",44, maxOfThree2(5, 4, 44)));
