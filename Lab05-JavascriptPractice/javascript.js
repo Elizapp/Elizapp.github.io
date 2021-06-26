@@ -97,7 +97,7 @@ function maxOfThree2(a, b, c) {
 
 
 
-function test() {
+function testAll() {
     console.log(
     "Expected output of  " + myFunctionTest(' max(4,5)', 5, max(4, 5))
    + "\nExpected output of  " + myFunctionTest(' maxOfThree(8,26, 27)', 27, maxOfThree(8,26, 27))
