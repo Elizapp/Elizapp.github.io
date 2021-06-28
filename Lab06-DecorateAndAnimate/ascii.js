@@ -1,6 +1,6 @@
 
 window.onload = function() {
-    document.getElementById("start").onclick = ftimer;
+    document.getElementById("start").onclick = setTimer;
     document.getElementById("stop").onclick = stop;
     document.getElementById("animation").onchange = animation;
     document.getElementById("fontsize").onchange = fontSize;
@@ -25,7 +25,7 @@ function start() {
     document.getElementById("turbo").disabled = false;
 }
 
-function ftimer() {
+function setTimer() {
     if (timer == null) {
         timer = setInterval(start, 250);
     }
