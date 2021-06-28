@@ -9,7 +9,10 @@ a.container
     font-size: 12pt;
 	width: 100%;
 }
-
+.text-area-container{
+    margin: auto;
+    width: 80%;
+}
 fieldset{
      border: 5px solid black;
      display: inline;
@@ -18,7 +21,7 @@ legend {
    text-align: left;
 }
 article{
-    align-items: center;
+    margin: auto;
 }
 button{
     width: 47%;
