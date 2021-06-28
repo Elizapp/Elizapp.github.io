@@ -1,4 +1,4 @@
-.container
+a.container
 {
     width: 960px;
     margin: 0 auto;
@@ -18,7 +18,7 @@ legend {
    text-align: left;
 }
 article{
-    alignment-adjust: central;
+    alignment-adjust: center;
 }
 button{
     width: 47%;
