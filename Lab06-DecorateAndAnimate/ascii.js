@@ -7,10 +7,11 @@ window.onload = function() {
     document.getElementById("turbo").onchange = turbo;
 };
 
-var animate = [];
-var timer = null;
-var i = 0;
-var frame = null;
+
+let i = 0;
+let frame = null;
+let animate = [];
+let timer = null;
 
 function start() {
     document.getElementById("text-area").value = animate[i];
@@ -43,7 +44,7 @@ function stop() {
 
 function animation() {
     document.getElementById("start").disabled = false;
-    var animation = document.getElementById("animation").value;
+    let animation = document.getElementById("animation").value;
     animate = ANIMATIONS[animation].split("=====\n");
 
     frame = ANIMATIONS[animation];
@@ -54,7 +55,7 @@ function animation() {
 }
 
 function fontSize() {
-    var text = document.getElementById("text-area");
+    let text = document.getElementById("text-area");
     //Tiny (7pt), Small (10pt), Medium (12pt), Large (16pt), Extra Large (24pt), XXL (32pt)
     let fontS = document.getElementById("fontsize").value;
     switch(fontS){
@@ -80,7 +81,7 @@ function fontSize() {
 }
 
 function turbo() {
-    var check = document.getElementById("turbo").checked;
+    let check = document.getElementById("turbo").checked;
     clearInterval(timer);
     if (check){
         timer = setInterval(start, 50);
