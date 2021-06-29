@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Product Form - MIU Golden Dorm Market</title>
+    <link rel="stylesheet" href="Lab07-FunctionalProgrammingAndRegExp/bootstrap.min.css" />
+    <script src="Lab07-FunctionalProgrammingAndRegExp/jquery-slim.min.js"></script>
+    <script src="Lab07-FunctionalProgrammingAndRegExp/popper.min.js"></script>
+    <script src="Lab07-FunctionalProgrammingAndRegExp/bootstrap.min.js"></script>
+    <script src="Lab07-FunctionalProgrammingAndRegExp/style.css"></script>
+</head>
+<body>
+<header class="header bg-primary d-flex justify-content-between">
+    <nav class="nav display-5 text-white">
+        <div class="nav-item"><h3 class="nav-link text-white">MIU Golden Dorm Market ::: SRM System </h3></div>
+        <div class="nav-item border-right border-white border-left mt-2">
+            <a class="nav-link media-breakpoint-u active">Products</a>
+        </div>
+        <div class="nav-item  mt-2">
+            <a class="nav-link media-breakpoint-u">Suppliers</a>
+        </div>
+    </nav>
+    <div class="d-flex align-items-center mr-3">
+        <span class="mr-3 text-white">Hello!</span>
+        <span class="btn btn-light">Sign Out</span>
+    </div>
+</header>
+<section class="container mt-5">
+    <div class="content">
+        <h2>New Product Form</h2>
+
+        <form id="productForm" action="#" onsubmit="handleAddProduct()">
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="productNumber">Product Number</label>
+                    <input type="number" class="form-control" id="productNumber" required step="1">
+                </div>
+                <div class="form-group col-6">
+                    <label for="quantity">Quantity in Stock</label>
+                    <input type="number" class="form-control" id="quantity" required value="0" step="1">
+                </div>
+                <div class="form-group col-6">
+                    <label for="productName">Name</label>
+                    <input type="text" class="form-control" id="productName" required>
+                </div>
+                <div class="form-group col-6">
+                    <label for="supplier">Supplier</label>
+                    <select class="form-control" id="supplier" name="supplier" required>
+                        <option value="">Select a Supplier</option>
+                        <option value="1">Supplier 1</option>
+                        <option value="2">Supplier 2</option>
+                        <option value="3">Supplier 3</option>
+                    </select>
+                </div>
+                <div class="form-group col-6">
+                    <label for="unitPrice">Unit Price</label>
+                    <input type="number" class="form-control" id="unitPrice" required step="0.01" value="0.0">
+                </div>
+                <div class="form-group col-6">
+                    <label for="date">Date supplied</label>
+                    <input type="text" class="form-control" id="date" required aria-describedby="dateHelper"
+                           placeholder="yyyy-mm-dd" pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))">
+                    <small id="dateHelper" class="text-muted form-text">Enter valid Date</small>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mt-3">
+                <button id="btnReset" type="reset" class="btn btn-outline-primary mr-4">Reset</button>
+                <button id="btnCancel" type="reset" class="btn btn-outline-warning mr-4">Cancel</button>
+                <button id="btnAddProduct" type="submit" class="btn btn-outline-info">Add Product</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
