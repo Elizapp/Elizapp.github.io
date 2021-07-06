@@ -3,8 +3,8 @@ class Bank{
     constructor(...accounts) {
         this.account = accounts;
     }
-    addAccount(number){
-        this.account.push(number);
+    addAccount(account){
+        this.account.push(account);
     }
     addSavingsAccount(interest){
         this.addAccount(interest);
@@ -12,8 +12,8 @@ class Bank{
     addCheckingAccount(overdraft){
         this.addAccount(overdraft);
     }
-    closeAccount(number){
-        let newArr = this.account.filter(acc => acc != number);
+    closeAccount(account){
+        let newArr = this.account.filter(acc => acc != account);
         this.account = newArr;
     }
     accountReport(){
