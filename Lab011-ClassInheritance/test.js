@@ -28,13 +28,13 @@ describe("Class CheckingAccount", function () {
 });
 
 let bank = new Bank(new Account(1004));
-bank.addAccount(new Account(1006));
-bank.addAccount(savinAccount);
-bank.closeAccount(checkingAccount)
+bank.addAccount(1006);
+bank.addAccount(1007);
+bank.closeAccount(1008)
 bank.accountReport();
 describe("Class Bank", function () {
     it("Bank object should have an array of Account objects",
         function () {
-            assert.equal("Bank account numbers: Account 1004: balance 102.5,Account 1006: balance 102.5,Account 1002: balance 104.55", bank.toString());
+            assert.equal("Bank account numbers: Account 1004: balance 102.5,Account 1006: balance 102.5,Account 1007: balance 102.5", bank.toString());
         });
 });

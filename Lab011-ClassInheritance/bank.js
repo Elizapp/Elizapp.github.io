@@ -4,7 +4,8 @@ class Bank{
         this.account = accounts;
     }
     addAccount(account){
-        this.account.push(account);
+        let newAcc = new Account(account)
+        this.account.push(newAcc);
     }
     addSavingsAccount(interest){
         this.addAccount(interest);
@@ -13,7 +14,7 @@ class Bank{
         this.addAccount(overdraft);
     }
     closeAccount(account){
-        let newArr = this.account.filter(acc => acc != account);
+        let newArr = this.account.filter(acc => acc.getNumber() != account);
         this.account = newArr;
     }
     accountReport(){
