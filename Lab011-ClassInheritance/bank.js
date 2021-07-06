@@ -18,7 +18,7 @@ class Bank{
         this.account = newArr;
     }
     accountReport(){
-        return this.account.forEach(num => console.log(num));
+        return this.account.forEach(acc => console.log(acc));
     }
     toString() {
         return "Bank account numbers: " + this.account;
