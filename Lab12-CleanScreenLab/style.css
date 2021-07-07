@@ -1,0 +1,37 @@
+section{
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 2%;
+
+}
+#circle-container{
+    margin-top: 80px;
+    grid-column: span 3;
+    position: relative;
+
+}
+
+.circle{
+    background: #ff006f;
+    border-radius: 50%;
+    display:inline-block;
+    position: absolute;
+}
+#controls{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#controls div{
+    margin-top: 10px;
+}
+label{
+    font-weight: 600;
+}
+button{
+    background: #0D3C3A;
+    color: #FFFFFF;
+}
