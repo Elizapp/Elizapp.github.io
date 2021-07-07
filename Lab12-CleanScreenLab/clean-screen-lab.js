@@ -54,11 +54,4 @@ $(function (){
             Math.round(Math.random()*255)+')'
     }
 
-    $("#helloForm").append($("<input>", {
-        "attr":{
-            "type": "text",
-            "value": "hello world",
-            "name": "hello"
-        }
-    }));
 })
