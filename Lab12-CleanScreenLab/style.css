@@ -35,3 +35,11 @@ button{
     background: #0D3C3A;
     color: #FFFFFF;
 }
+#validate{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    opacity: 70%;
+}
