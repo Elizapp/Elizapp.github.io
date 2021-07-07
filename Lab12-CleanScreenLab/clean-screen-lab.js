@@ -1,10 +1,9 @@
 $(function (){
     stopId = 0;
-        $("#start").click(function (){
-       if(stopId != 0){
-           clearInterval(stopId);
-       }
+    $("#start").click(function (){
+       if(stopId != 0){ clearInterval(stopId); }
         $(".circle").remove();
+
         let numberCircles = parseInt($("#number-circles").val());
         let width = parseInt($("#circle-width").val());
         let growthAmount = parseInt($("#growth-amount").val());
