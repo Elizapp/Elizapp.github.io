@@ -24,7 +24,7 @@ $(function (){
                     $(this).hide();
                 },
                 "mouseenter": function() {
-                    $(this).css("opacity", 0.3);
+                    $(this).css("opacity", 0.7);
                 },
                 "mouseleave": function() {
                     $(this).css("opacity", 1);
