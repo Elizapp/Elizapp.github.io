@@ -24,10 +24,10 @@ $(function (){
                     $(this).hide();
                 },
                 "mouseenter": function() {
-                    $(this).css("opacity", 0.7);
+                    $(this).animate({opacity: '0.3'}, 3000);
                 },
                 "mouseleave": function() {
-                    $(this).css("opacity", 1);
+                    $(this).animate({opacity: '1'}, 0.001);
                 },
             }));
         }
